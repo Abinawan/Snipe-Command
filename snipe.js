@@ -19,7 +19,7 @@ bot.on('message', message => {
             return message.channel.send(`There is nothing to snipe. BOOMER`)
         }
         let embed = new Discord.MessageEmbed()
-        .setTitle(bot.users.cache.get(senderid).username, bot.users.cache.get(senderid).displayAvatarURL({ format: "png", dynamic: true }))
+        .setAuthor(bot.users.cache.get(senderid).username, bot.users.cache.get(senderid).displayAvatarURL({ format: "png", dynamic: true }))
         .setDescription(msg)
         .setColor("RANDOM")
         .setTimestamp()
